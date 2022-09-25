@@ -25,5 +25,5 @@ public class TemplateRule {
     /**
      * 过期时间
      */
-    private Long deadLine;
+    private Long deadline;
 }
