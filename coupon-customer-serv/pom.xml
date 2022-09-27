@@ -6,10 +6,10 @@
         <groupId>com.persimmon</groupId>
         <artifactId>geekbang-coupon</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>coupon-customer-serv</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>coupon-customer-impl</module>
