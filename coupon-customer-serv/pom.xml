@@ -10,4 +10,10 @@
     </parent>
 
     <artifactId>coupon-customer-serv</artifactId>
+
+    <modules>
+        <module>coupon-customer-impl</module>
+        <module>coupon-customer-api</module>
+        <module>coupon-customer-dao</module>
+    </modules>
 </project>

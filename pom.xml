@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.4</version>
+        <version>2.4.2</version>
     </parent>
 
     <groupId>com.persimmon</groupId>
@@ -18,13 +18,29 @@
         <module>coupon-calculation-serv</module>
         <module>coupon-customer-serv</module>
         <module>middleware</module>
-        <module>coupon-customer-serv/coupon-customer-api</module>
-        <module>coupon-customer-serv/coupon-customer-dao</module>
-        <module>coupon-customer-serv/coupon-customer-impl</module>
     </modules>
 
     <dependencyManagement>
+
         <dependencies>
+
+            <!--  SpringCloud 和 SpringCloud Alibaba   -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2020.0.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2021.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <!-- 工具类 -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
